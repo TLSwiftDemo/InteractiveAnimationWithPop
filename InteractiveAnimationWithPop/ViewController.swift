@@ -59,7 +59,7 @@ class ViewController: UIViewController,DraggableViewDelegate {
     func targetPoint() -> CGPoint {
         let size = self.view.bounds.size
         
-        let point = self.paneState == PaneState.closed ? CGPointMake(size.width/2, size.height * 1.25) : CGPointMake(size.width/2, size.height/2 + 250)
+        let point = self.paneState == PaneState.closed ? CGPointMake(size.width/2, size.height * 1.25) : CGPointMake(size.width/2, size.height/2 + 100)
         
         print("point:\(point)")
        return point
